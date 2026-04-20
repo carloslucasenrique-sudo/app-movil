@@ -3,77 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuernavaca - La Ciudad de la Eterna Primavera</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cuernavaca - Turismo</title>
+
+    <!-- Vinculación CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>Cuernavaca, Morelos</h1>
-    <p>La Ciudad de la Eterna Primavera</p>
+    <div class="hero">
+        <h1>Cuernavaca</h1>
+        <p>La Ciudad de la Eterna Primavera</p>
+    </div>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#lugares">Lugares</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <a href="#historia">Historia</a>
+    <a href="#lugares">Lugares</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
 </nav>
 
-<section id="inicio" class="hero">
-    <h2>Bienvenido a Cuernavaca</h2>
+<main>
+
+<section id="historia">
+    <h2>Historia</h2>
+    <p>
+        Cuernavaca es una ciudad con gran riqueza histórica, desde las culturas prehispánicas
+        hasta la época colonial. Su clima cálido la convierte en un destino turístico ideal.
+    </p>
 </section>
 
 <section id="lugares">
     <h2>Lugares turísticos</h2>
 
-    <div class="card">
-        <img src="images/cortes.jpg" alt="Palacio de Cortés">
-        <h3>Palacio de Cortés</h3>
-        <p>Uno de los edificios coloniales más antiguos de México.</p>
-    </div>
+    <div class="cards">
 
-    <div class="card">
-        <img src="images/borda.jpg" alt="Jardín Borda">
-        <h3>Jardín Borda</h3>
-        <p>Hermoso jardín histórico con áreas verdes y fuentes.</p>
-    </div>
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Palacio_de_Cort%C3%A9s.jpg" alt="">
+            <h3>Palacio de Cortés</h3>
+            <p>Edificio histórico convertido en museo.</p>
+        </article>
 
-    <div class="card">
-        <img src="images/catedral.jpg" alt="Catedral">
-        <h3>Catedral de Cuernavaca</h3>
-        <p>Patrimonio histórico con arquitectura impresionante.</p>
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Jardin_Borda.jpg" alt="">
+            <h3>Jardín Borda</h3>
+            <p>Hermoso jardín lleno de historia y naturaleza.</p>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Catedral_de_Cuernavaca.jpg" alt="">
+            <h3>Catedral</h3>
+            <p>Monumento histórico del siglo XVI.</p>
+        </article>
+
     </div>
 </section>
 
 <section id="galeria">
     <h2>Galería</h2>
+
     <div class="galeria">
-        <img src="images/cuernavaca.jpg" alt="Vista de Cuernavaca">
-        <img src="images/cortes.jpg" alt="">
-        <img src="images/borda.jpg" alt="">
-        <img src="images/catedral.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cuernavaca_Centro.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Palacio_de_Cort%C3%A9s.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Jardin_Borda.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Catedral_de_Cuernavaca.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Teopanzolco.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Cuernavaca_Panoramica.jpg" alt="">
     </div>
+
 </section>
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <form id="formulario">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
+
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
         <textarea placeholder="Mensaje"></textarea>
         <button type="submit">Enviar</button>
     </form>
+
 </section>
 
+</main>
+
 <footer>
-    <p>&copy; 2026 Cuernavaca Web</p>
+    <p>© 2026 Turismo Cuernavaca</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
+    <script src="script.js"></script>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <span id="cerrar">&times;</span>
+    <img id="imagen-grande">
+</div>
 </html>
 
 
